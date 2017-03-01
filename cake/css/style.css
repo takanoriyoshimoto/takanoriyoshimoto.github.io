@@ -6,7 +6,7 @@
 }
 
 
-/*ヘッダー*/
+/****************ヘッダー*****************/
 
 body {
 	background-image: url(../image/Natural1.png);
@@ -31,7 +31,25 @@ body {
 }
 
 
-/*コンテンツ*/
+/*************ナビゲーションメニュー*************/
+
+.drawer-toggle {
+	margin: 50px 10px 0 0;
+}
+
+.drawer-menu li a {
+	display: block;
+	margin: 0 auto;
+	line-height: 3em;
+	text-align: center;
+	width: 100px;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+
+/**************コンテンツ****************/
 
 .container-small {
 	margin: 0 auto;
@@ -44,6 +62,7 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 23px;
+	margin-top: 40px;
 	margin-bottom: 30px;
 	font-family: 'Vidaloka', serif;
 }
@@ -74,11 +93,11 @@ body {
 }
 
 #container {
-	height: 450px;
+	height: 200px;
 }
 
 
-/*コンセプト*/
+/*************コンセプト**************/
 
 .concept {
 	margin-bottom: 90px;
@@ -89,7 +108,7 @@ body {
 	text-align: center;
 	font-size: 25px;
 	letter-spacing: 2px;
-	margin-top: 60px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	font-family: 'Vidaloka', serif;
 }
@@ -97,6 +116,7 @@ body {
 .concept p {
 	max-width: 600px;
 	margin: 0 auto;
+	padding: 0 8px 0 8px;
 	line-height: 1.8em;
 }
 
@@ -107,7 +127,7 @@ body {
 	font-size: 12px;
 	margin: 0 auto;
 	margin-top: 40px;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 	padding: 5px 3px 5px 3px;
 	color: #fff;
 	background-color: #222;
@@ -125,11 +145,10 @@ body {
 }
 
 
-/*アイテム*/
+/**************アイテム***************/
 
-.item-small {}
 
-.itemblock {}
+/*
 
 .itemblock h1 {
 	padding-top: 30px;
@@ -162,6 +181,11 @@ body {
 	border: 2px solid #222;
 }
 
+.itemblock {
+	width: 190px;
+	height: 160px;
+}
+
 .itemblock:nth-child(1) {
 	background-color: #FFBFB3;
 	margin-left: 3px;
@@ -179,6 +203,10 @@ body {
 	margin-left: 3px;
 	margin-right: 3px;
 }
+*/
+
+
+/****************アクセス*******************/
 
 .spot {
 	background-image: url(../image/sub.jpg);
@@ -186,12 +214,6 @@ body {
 	margin: 70px 0 70px 0;
 	background-position: top;
 	background-size: cover;
-}
-
-
-/*アクセス*/
-
-.spot {
 	color: #fff;
 }
 
@@ -199,8 +221,6 @@ body {
 	text-align: center;
 	text-shadow: 3px 3px 5px #222;
 }
-
-.location-small {}
 
 .address {
 	width: 370px;
@@ -293,7 +313,7 @@ dd {
 }
 
 
-/*ブログ*/
+/****************ブログ*****************/
 
 .info {
 	max-width: 700px;
@@ -343,8 +363,6 @@ dd {
 	margin-top: 10px;
 }
 
-.infoblock h2 {}
-
 .infoblock p {
 	font-size: 15px;
 	padding-left: 5px;
@@ -362,7 +380,7 @@ dd {
 }
 
 
-/*フッター*/
+/****************フッター****************/
 
 .footwrap {
 	background-image: url(../image/oliva.png);
@@ -380,7 +398,22 @@ dd {
 	text-align: center;
 }
 
-small{
+.location {
+	padding-top: 30px;
+}
+
+.sns {
+	padding-top: 30px;
+}
+
+dd {
+	font-size: 12px;
+}
+
+
+/***************コピーライト*****************/
+
+small {
 	display: block;
 	width: 400px;
 	text-align: center;
@@ -388,14 +421,165 @@ small{
 	font-size: 12px;
 }
 
-
-@media all and (min-width: 415px){
-
-
+@media (max-width:414px) {
+	.itemblock p {
+		display: none;
+	}
 }
 
 
-@media (min-width: px){
+/***********タブレットのレイアウトを記入*************/
+
+@media (min-width: 415px) {
+	#container {
+		height: 450px;
+	}
+	.containerwrap {
+		padding-top: 30px;
+		margin-top: 40px;
+	}
+	.concept {
+		padding: 1px 15px 1px 15px;
+	}
+	.container-small:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.container-small {
+		width: 620px;
+	}
+	.containerblock {
+		float: left;
+		margin-left: 40px;
+	}
+	.location {
+		padding-top: 100px;
+	}
+	.sns {
+		padding-top: 100px;
+	}
+	.itemblock {
+		margin: 0 auto;
+	}
+	.item-small {
+		display: flex;
+	}
+	.itemblock {
+		flex: 300px;
+		height: 220px;
+		position: relative;
+	}
+	.itemblock:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.itemblock-small-1 {
+		float: left;
+		width: 100%;
+		height: 220px;
+		background-color: rgba(250, 156, 184, 0.25);
+		position: absolute;
+		bottom: 0;
+		display: none;
+	}
+	.itemblock-small-2 {
+		float: left;
+		width: 100%;
+		height: 220px;
+		background-color: rgba(246, 190, 61, 0.25);
+		position: absolute;
+		bottom: 0;
+		display: none;
+	}
+	.itemblock-small-3 {
+		float: left;
+		width: 100%;
+		height: 220px;
+		background-color: rgba(146, 215, 143, 0.3);
+		position: absolute;
+		bottom: 0;
+		display: none;
+	}
+	.spot {
+		display: flex;
+	}
+	.location {
+		flex: 1;
+	}
+	.sns {
+		flex: 1
+	}
+	.containerwrap,
+	.drawer-menu,
+	.itemwrap {
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 
 
+/***********ここにパソコンのレイアウトを記入***********/
+
+@media (min-width: 1025px) {
+	.containerwrap {
+		padding-top: 100px;
+		padding-bottom: 60px;
+	}
+	.container-small:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.container-small {
+		width: 780px;
+	}
+	.containerblock {
+		margin: 0 0 0 15px;
+		float: left;
+		width: 250px;
+	}
+	.containerblock:first-child {
+		margin-left: 0;
+	}
+	/*ナビゲーションメニュー*/
+	.drawer-nav {
+		background-image: url(../image/oliva.png);
+		padding: 10px 0 10px 0;
+	}
+	.drawer-toggle {
+		display: none;
+	}
+	.drawer-menu {
+		display: flex;
+	}
+	.drawer-menu li {
+		flex: 1;
+	}
+	.drawer-menu li a {
+		font-size: 12px;
+	}
+	.drawer-menu li a:hover {
+		color: #cbb586;
+	}
+	.itemblock {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.spot {
+		margin-top: 100px;
+	}
+	.location {
+		padding-top: 110px;
+	}
+	.location h1 {
+		margin-bottom: 30px;
+	}
+	.sns {
+		padding-top: 110px;
+	}
+	.sns h1 {
+		margin-bottom: 30px;
+	}
 }

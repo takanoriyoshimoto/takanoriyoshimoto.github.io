@@ -32,27 +32,18 @@ $("document").ready(function () {
 	$(".drawer").drawer();
 });
 
+
 //$(function () {
 //	$(".itemblock").hover(function () {
-//		$(".itemblock-small-1").stop().slideToggle("fast");
-//	}),$(".itemblock").hover(function () {
-//		$(".itemblock-small-2").stop().slideToggle("fast");
-//	}),$(".itemblock").hover(function () {
-//		$(".itemblock-small-2").stop().slideToggle("fast");
+//		$(this).find(".itemblock-small-1").stop().slideToggle(300);
+//	});
+//	$(".itemblock").hover(function () {
+//		$(this).find(".itemblock-small-2").stop().slideToggle(300);
+//	});
+//	$(".itemblock").hover(function () {
+//		$(this).find(".itemblock-small-3").stop().slideToggle(300);
 //	});
 //});
-
-$(function () {
-	$(".itemblock").hover(function () {
-		$(this).find(".itemblock-small-1").stop().slideToggle(300);
-	});
-	$(".itemblock").hover(function () {
-		$(this).find(".itemblock-small-2").stop().slideToggle(300);
-	});
-	$(".itemblock").hover(function () {
-		$(this).find(".itemblock-small-3").stop().slideToggle(300);
-	});
-});
 
 
 $(function () {
