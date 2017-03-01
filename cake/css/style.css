@@ -235,13 +235,13 @@ body {
 }
 
 dt {
+	font-size: 13px;
 	float: left;
 	text-indent: 1em;
 	text-shadow: 3px 3px 2px #222;
 }
 
 dd {
-	font-size: 14px;
 	line-height: 2em;
 	text-shadow: 3px 3px 2px #222;
 }
