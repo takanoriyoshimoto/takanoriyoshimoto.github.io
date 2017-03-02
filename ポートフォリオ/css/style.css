@@ -351,7 +351,7 @@ header {
 }
 
 .aboutwrap {
-	width: 70%;
+	width: 90%;
 	height: 400px;
 	margin: 0 auto;
 }
@@ -379,7 +379,16 @@ header {
 	text-indent: 2em;
 }
 
-@media (min-width:) @media (max-width:1024px) {
+
+/*
+@media (min-width:768px) and (max-width:1024px) {
+	.container {
+		height: 80vh;
+	}
+}
+*/
+
+@media (max-width:1024px) {
 	/*****ウォーク*****/
 	.work h1 {
 		margin-bottom: 50px;
@@ -442,5 +451,8 @@ header {
 	.contentblock {
 		flex: 4;
 		margin-top: 20px;
+	}
+	.aboutwrap {
+		width: 70%;
 	}
 }
