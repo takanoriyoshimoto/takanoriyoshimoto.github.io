@@ -14,7 +14,7 @@ body {
 
 .container {
 	width: 100%;
-	height: 55vh;
+	height: 100vh;
 }
 
 
@@ -379,7 +379,7 @@ header {
 	text-indent: 2em;
 }
 
-@media (max-width:1024px) {
+@media (min-width:) @media (max-width:1024px) {
 	/*****ウォーク*****/
 	.work h1 {
 		margin-bottom: 50px;
