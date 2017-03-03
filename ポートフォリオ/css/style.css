@@ -6,7 +6,7 @@
 }
 
 body {
-	/*	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;*/
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
 
 
@@ -28,7 +28,7 @@ body {
 }
 
 .block1-small {
-	height: 80%;
+	height: 85%;
 	width: 70%;
 	position: relative;
 }
@@ -55,11 +55,13 @@ body {
 	text-align: center;
 	color: #C9D6DF;
 	font-size: 18px;
+	font-family: 'Rubik', sans-serif;
 }
 
 .name p {
 	color: #C9D6DF;
 	font-size: 12px;
+	font-family: 'Rubik', sans-serif;
 }
 
 
@@ -67,7 +69,7 @@ body {
 
 .sns {
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .sns ul {
@@ -113,7 +115,7 @@ body {
 
 .info h2 {
 	color: #C9D6DF;
-	font-size: 14px;
+	font-size: 10px;
 	;
 }
 
@@ -212,7 +214,7 @@ body {
 .work h1 {
 	color: #364F6B;
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 45px;
 	font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -295,17 +297,16 @@ header {
 
 .maincontent {
 	width: 80%;
-	height: 600px;
+	height: 550px;
 	margin: 0 auto;
 }
 
 .maincontent h1 {
 	color: #C9D6DF;
 	text-align: center;
-	font-size: 14px;
+	font-size: 18px;
 	margin-bottom: 5px;
 	font-family: 'Rubik', sans-serif;
-	;
 }
 
 .maincontent img {
@@ -327,6 +328,47 @@ header {
 
 .contentblock p {
 	color: #C9D6DF;
+}
+
+.contentblock dt {
+	color: #C9D6DF;
+}
+
+.contentblock dd {
+	color: #C9D6DF;
+	font-size: 12px;
+}
+
+.contentblock dt {
+	margin-bottom: 10px;
+}
+
+.contentblock dd {
+	margin-bottom: 20px;
+	padding-left: 1em;
+}
+
+.contentblock i {
+	padding-left: 5px;
+}
+
+.contentblock a {
+	display: block;
+	padding: 2px 0 2px 0;
+	width: 45%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Julius Sans One', sans-serif;
+	background: #FC5185;
+	color: #C9D6DF;
+}
+
+.contentblock a:hover {
+	transition: 0.8s;
+	color: #FC5185;
+	background-color: #C9D6DF;
 }
 
 
