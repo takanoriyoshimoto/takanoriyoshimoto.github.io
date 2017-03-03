@@ -10,22 +10,9 @@ body {
 }
 
 
-/**********二つのブロックの大きさ*********/
+/**********ブロックの大きさ*********/
 
-
-/*
-.container {
-	width: 100%;
-	height: 100vh;
-}
-*/
-
-.block1 {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-}
-
+.block1,
 .block2 {
 	width: 100%;
 	height: 100vh;
@@ -222,6 +209,8 @@ body {
 	background: #C9D6DF;
 	border: 1px solid #C9D6DF;
 }
+
+.block2-small {}
 
 
 /*****ウォーク*****/
